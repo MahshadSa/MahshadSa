@@ -1,20 +1,30 @@
-# Hi, I’m Mahshad 👋
+# Hi, I’m Mahshad Sarikhani👋
 
-MD & radiology researcher working at the intersection of **medical imaging** and **machine learning**. I build reproducible tools and models that make MRI, CT, and clinical reports easier to analyse and quantify.
+MD and research associate in abdominal radiology at Shariati Hospital,
+Tehran University of Medical Sciences. My work sits at the intersection
+of quantitative MRI, IBD imaging, and clinical AI.
 
-### What I’m exploring
+I build reproducible tools and models for problems that matter clinically:
+extracting structured metrics from radiology reports, stratifying disease
+activity from MRE features, and making complex imaging workflows usable
+in research pipelines.
 
-* **Multimodal models** linking imaging, text, and clinical data
-* **Foundation models** and retrieval methods for radiology
-* Quantitative **MRE for IBD** (motility, chronicity, activity)
-* **LLM-based extraction** of structured metrics from reports
-* Clinical calculators and lightweight research apps
+## Current focus
 
-### Featured projects
+- Agentic LLM pipeline for automated crohn's Lémann Index scoring from free-text MRE reports
+- Bayesian multilevel model for ulcerative colitis segmental Mayo Endoscopic Score triage system from MRE
+- Quantitative MRE in ulcerative colitis: motility, chronicity, activity
 
-* **Lémann Index Calculator** – simple Streamlit app for updated LI scoring
-* **radiology-clip-mini** – compact CLIP baseline for CXR–report retrieval
-* **ct-phrase-retrieval** – phrase-grounded CT slice search on DeepLesion
-* **ibd-mre-multimodal** – early-stage multimodal pipeline for IBD activity
+## Recent work
 
-I aim to turn complex imaging workflows into reproducible, usable tools that move clinical research forward. Always happy to connect or discuss ideas.
+- Two oral presentations at ESGAR 2026
+- Ongoing collaboration with UCL / Motilent on quantitative bowel MRE
+
+Selected projects
+
+- lemann-li-app - Streamlit calculator for updated Lémann Index scoring
+- radiology-clip-mini - compact CLIP baseline for CXR–report retrieval
+- uc-mre-activity-risk-stratifier - Bayesian ordinal model for UC MRE activity
+- ibd-mre-multimodal  early-stage multimodal pipeline for IBD activity
+
+[Google Scholar](https://scholar.google.com/citations?user=iKhNW9AAAAAJ)
