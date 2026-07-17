@@ -1,26 +1,33 @@
-# Hi, I'm Mahshad Sarikhani 👋
+# Mahshad Sarikhani
 
-MD and research associate in abdominal radiology at Shariati Hospital, Tehran University of Medical Sciences. My work sits at the intersection of quantitative MRI, IBD imaging, and clinical AI.
+MD and research associate in abdominal radiology at Shariati Hospital, Tehran University of Medical Sciences. I work on quantitative MRI in inflammatory bowel disease, at the point where imaging methodology meets clinical decision-making.
 
-I build reproducible tools and models for problems that matter clinically: stratifying disease activity from MRE features, extracting structured metrics from radiology reports, and making complex imaging workflows usable in research pipelines.
+Most of what I build starts from a problem I hit in my own research: disease activity that endoscopy measures invasively and MRE could measure better, radiology reports that hold structured information no one can query, literature that arrives faster than I can triage it. The tools here are reproducible by design, because the alternative is work that cannot be checked.
 
 ## Current focus
 
-- Bayesian multilevel model for segmental Mayo Endoscopic Score triage in ulcerative colitis, from MRE features and fecal calprotectin
+- Bayesian multilevel modelling for segmental Mayo Endoscopic Score triage in ulcerative colitis, using MRE features and fecal calprotectin
 - Quantitative MRE in ulcerative colitis: motility, chronicity, and activity
-- Building toward an agentic LLM pipeline for Lémann Index scoring from free-text MRE reports in Crohn's disease, currently at the deterministic foundation stage
+- Working toward an agentic LLM pipeline for Lémann Index scoring from free-text MRE reports in Crohn's disease, currently at the deterministic foundation stage
 
-## Recent work
+## Recent
 
 - Two first-author oral presentations at ESGAR 2026
-- Ongoing collaboration with UCL / Motilent on quantitative bowel MRE
+- Ongoing collaboration with UCL and Motilent on quantitative bowel MRE
 
 ## Selected projects
 
-- **uc-mre-activity-risk-stratifier** — Bayesian ordinal model for UC disease activity from MRE
-- **abdominal-radiology-reports** — reproducible, privacy-preserving pipeline for structuring free-text radiology reports
-- **radiology-clip-mini** — compact CLIP baseline for chest radiograph and report retrieval
-- **lemann-li-app** — Streamlit calculator for the updated Lémann Index
-- **ibd-mre-multimodal** — early-stage multimodal pipeline for IBD activity
+**[radiology-clip-mini](https://github.com/MahshadSa/radiology-clip-mini)** — A CLIP-style image-text retrieval baseline for chest radiographs and reports, built as a reference implementation others can actually run. ResNet-18 and DistilBERT encoders, symmetric InfoNCE, Grad-CAM interpretability, patient-level splits to prevent leakage. Versioned on Zenodo with CI and deterministic seeds.
+[DOI: 10.5281/zenodo.17795012](https://doi.org/10.5281/zenodo.17795012)
 
-[Google Scholar](https://scholar.google.com/citations?user=iKhNW9AAAAAJ)
+**[ibd-digest](https://github.com/MahshadSa/ibd-digest)** — A daily pipeline that fetches new IBD imaging research from PubMed and Crossref, ranks it by SPECTER2 semantic similarity against a curated corpus, and delivers a tiered digest to Obsidian. The interesting problem was calibration: SPECTER2 produces uniformly high cosine similarities on in-domain biomedical text, so fixed thresholds are useless. Tiers are anchored to corpus percentiles instead. Runs unattended on a schedule.
+
+**[uc-mre-activity-risk-stratifier](https://github.com/MahshadSa/uc-mre-activity-risk-stratifier)** — Bayesian ordinal regression estimating segment-level Mayo endoscopic severity from MRE features. Marginalises the patient random intercept via Gauss-Hermite quadrature to give new-patient probabilities rather than population averages. Model constants are versioned; scope limits are explicit.
+[DOI: 10.5281/zenodo.18171573](https://doi.org/10.5281/zenodo.18171573)
+
+**[lemann-li-app](https://github.com/MahshadSa/lemann-li-app)** — Streamlit implementation of the updated Organ and Global Lémann Index (Pariente et al., *Gastroenterology* 2021). Research and education use only.
+[DOI: 10.5281/zenodo.17514287](https://doi.org/10.5281/zenodo.17514287)
+
+**[abdominal-radiology-reports](https://github.com/MahshadSa/abdominal-radiology-reports)** — Pipeline for turning free-text abdominal radiology reports into structured, queryable records. Patient data never enters the repository; tests use synthetic documents only. Phase 0 complete, Phase 1 in progress.
+
+[Google Scholar](https://scholar.google.com/citations?user=iKhNW9AAAAAJ) |  [ORCID](https://orcid.org/0000-0002-0475-3064)
